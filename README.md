@@ -11,4 +11,5 @@ if you are just here to look at the project there are a few bf files which you c
 if it doesnt run pls check if all of the libraries are installed correctly if not use:
 pip install pygame
 pip install sys #even tho i think its included by default
+
 pip install time #even tho i think its included by default
