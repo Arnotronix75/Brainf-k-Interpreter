@@ -2,8 +2,11 @@ import time
 import pygame
 import sys
 
-
-file = """>>>>,."""
+if len(sys.argv) == 2:
+	file = open(sys.argv[1], "r").read()
+else:	
+	file = """++++++++++[>++++++<-]>+++++.>++++++++++.<.++"""
+print(file)
 if "#" in file:
     pygame.init()
 
@@ -64,7 +67,7 @@ def interpret(token):
             else:
                 dp += 1
         if i == ".":
-            print(chr(stack[dp]))
+            print(chr(stack[dp]), end=" ")
         if i == ",":
             stack[dp] = ord(list(input())[0])
         if i == "[":
@@ -105,6 +108,5 @@ if "#" in file:
             if event.type == pygame.QUIT:
                 go = False
 # Made in Germany by Arnotronix
-
 
 
