@@ -16,4 +16,12 @@ pip install sys #even tho i think its included by default
 
 pip install time #even tho i think its included by default
 
-i dont think i have to tell you that you need to have a python interpreter installed. you can install it from the official python website (python.org) but pls check the install pip box in the installer
+i dont think i have to tell you that you need to have a python interpreter installed. you can install it from the official python website (python.org) but pls check the install pip box in the installer (if you are still on windows)
+
+on linux (even tho i think it comes preinstalled) you can use:
+
+sudo apt-get install python
+
+for arch:
+
+sudo pacman -S python
